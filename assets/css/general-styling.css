@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+}
+body {
+    background-color: grey;
+    color: white;
+}
+p, input, button {
+    font-size: large;
+}
+button, input {
+    background-color: grey; color: white;
+    margin: 5px;
+    border: 2px ridge darkgray;
+}
+input::placeholder {
+    color: #ddd;
+    font-style: italic;
+    font-size: 0.95em;
+    opacity: 1;
+}
+input:focus, button:focus {
+    border: 2px ridge #6fa9ff; /* subtle blue ridge */
+    outline: none;
+    box-shadow: 0 0 4px #6fa9ff66;
+}
+.home {
+    color: whitesmoke;
+}

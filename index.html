@@ -3,8 +3,31 @@
     <head>
         <meta charset="utf-8">
         <title>Problife · the real-life secure problems.</title>
+        <link rel="stylesheet" href="./assets/css/general-styling.css">
     </head>
-    <body>
+    <body style="text-align: center;">
+        <h1>Problife · the real-life secure problems.</h1>
+
+        <form id="qid-form" method="get">
+            <label for="qid_input">Enter problem ID</label>
+            <input id="qid_input" name="qid" type="text" required>
+            <button type="submit">Submit</button>
+        </form>        
+
+        <script type="module">
+            document.getElementById('qid-form').addEventListener('submit', (e) => {
+                e.preventDefault(); // stop page reload
+                const input = document.getElementById('qid_input').value.trim();
+                const num = parseInt(input, 10);
         
+                if (isNaN(num)) {
+                    alert("Please enter a valid number.");
+                    return;
+                }
+        
+                // Redirect to question.html?qid=###
+                window.location.href = `question_onload.html?qid=${num}`;
+            });
+        </script>        
     </body>
 </html>

@@ -1,0 +1,80 @@
+/*general*/
+#tag-bar, #main-div {
+    margin: 10px; padding: 10px; border: 2px solid #ccc; border-radius: 10px;
+}
+#tag-bar {
+    width: 20%;
+}
+#main-div {
+    flex: 1;
+}
+
+/*password managements*/
+#password-accept {
+    width: 50%;
+    text-align: center;
+}
+#password-accept input {
+    width: 50%;
+}
+
+@keyframes shake {
+    0%   { transform: translateX(0); }
+    20%  { transform: translateX(-5px); }
+    40%  { transform: translateX(5px); }
+    60%  { transform: translateX(-5px); }
+    80%  { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+  }
+  
+.shake {
+    animation: shake 0.3s ease;
+}
+
+  #password-accept input::placeholder {
+    color: #ccc;
+    opacity: 1;
+    transition: color 0.3s ease, opacity 0.3s ease;
+  }
+  
+  #password-accept input.wrong::placeholder {
+    color: red;
+    opacity: 0.8;
+  }
+  
+  /*author tag management*/
+
+  #author-tag {
+    font-style: italic;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    text-align: right;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+  }
+  #author-tag:hover {
+    opacity: 1;
+  }
+
+  /*problem tags*/
+
+  ul#tag-list li {
+    border: 2px solid #ccc;
+    padding: 5px;
+    margin: 10px;
+  }
+
+  #verdict {
+    transition: opacity 0.3s ease, transform 0.2s ease;
+  }
+  
+  #verdict.show {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+  #verdict.hide {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  

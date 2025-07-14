@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title id="page-title">Question -- Problife</title>
+    <link rel="stylesheet" href="./assets/css/general-styling.css">
+    <link rel="stylesheet" href="./assets/css/question_form.css">
+
+    <script type="module" src="./assets/js/question_onload.js" defer></script>
+</head>
+<body>
+    <a href="./index.html" class="home">&lt;- Home</a>
+    <br>
+
+    <h1 id="header-title">Question</h1>
+
+    <div id="password-accept" style="display: none;">
+        <h2>This problem is protected by password.</h2>
+        <input id="password-input" name="password" type="password" placeholder="Enter password" required>
+        <button id="password-submit">Visit</button>
+    </div>
+
+    <div id="content-wrapper" style="display: none; gap: 1rem;">
+        <div id="main-div">
+            <h2>Problem</h2>
+            <main id="question-container" style="flex: 1;">
+                <!-- Question content will be rendered here -->
+            </main>
+            <div id="verdict"></div>
+        </div>
+        
+
+        <aside id="tag-bar">
+            <h2>Tags</h2>
+            <ul id="tag-list" style="list-style: none; padding-left: 0;">
+                <!-- Tags will be dynamically inserted here -->
+            </ul>
+        </aside>
+    </div>
+</body>
+
+</html>
