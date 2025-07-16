@@ -9,6 +9,7 @@ export const problem = {
     "form-content": [
         {
             "question": [
+                "Undoubtedly, this happened in real life:",
                 "In the 16-day holiday in July 2025", 
                 "my daydream percentage was 50% and each daydream was composed of two dreams.",
                 "75% of the dreams were about lego trains and 25% were about you.",
